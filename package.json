@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "heroku-self-ping": "^1.1.1",
     "request": "^2.58.0"
   }
 }
