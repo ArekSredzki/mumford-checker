@@ -7,7 +7,7 @@ var Ping = require('./lib/ping'),
 
 var monitor = new Ping({
   website: 'http://ckpk.streamon.fm/metadata/events/CKPK-48k.json',
-  interval: '15' // seconds
+  interval: '5' // seconds
 });
 
 
