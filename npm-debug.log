@@ -3,23 +3,35 @@
 2 info using npm@2.11.2
 3 info using node@v0.12.5
 4 verbose node symlink /usr/local/bin/node
-5 verbose stack Error: missing script: start
-5 verbose stack     at run (/usr/local/lib/node_modules/npm/lib/run-script.js:142:19)
-5 verbose stack     at /usr/local/lib/node_modules/npm/lib/run-script.js:58:5
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:345:5
-5 verbose stack     at checkBinReferences_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:309:45)
-5 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:343:3)
-5 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:300:12
-5 verbose stack     at evalmachine.<anonymous>:334:14
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
-5 verbose stack     at FSReqWrap.oncomplete (evalmachine.<anonymous>:95:15)
-6 verbose cwd /Users/areksredzki/Dropbox/dev/env/current/misc/mumford-checker
-7 error Darwin 15.0.0
-8 error argv "node" "/usr/local/bin/npm" "start"
-9 error node v0.12.5
-10 error npm  v2.11.2
-11 error missing script: start
-12 error If you need help, you may report this error at:
-12 error     <https://github.com/npm/npm/issues>
-13 verbose exit [ 1, true ]
+5 verbose run-script [ 'prestart', 'start', 'poststart' ]
+6 info prestart mumford-checker@1.0.0
+7 info start mumford-checker@1.0.0
+8 verbose unsafe-perm in lifecycle true
+9 info mumford-checker@1.0.0 Failed to exec start script
+10 verbose stack Error: mumford-checker@1.0.0 start: `app.js`
+10 verbose stack spawn ENOENT
+10 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+10 verbose stack     at ChildProcess.emit (events.js:110:17)
+10 verbose stack     at maybeClose (child_process.js:1015:16)
+10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+11 verbose pkgid mumford-checker@1.0.0
+12 verbose cwd /Users/areksredzki/Dropbox/dev/env/current/misc/mumford-checker
+13 error Darwin 15.0.0
+14 error argv "node" "/usr/local/bin/npm" "start"
+15 error node v0.12.5
+16 error npm  v2.11.2
+17 error file sh
+18 error code ELIFECYCLE
+19 error errno ENOENT
+20 error syscall spawn
+21 error mumford-checker@1.0.0 start: `app.js`
+21 error spawn ENOENT
+22 error Failed at the mumford-checker@1.0.0 start script 'app.js'.
+22 error This is most likely a problem with the mumford-checker package,
+22 error not with npm itself.
+22 error Tell the author that this fails on your system:
+22 error     app.js
+22 error You can get their info via:
+22 error     npm owner ls mumford-checker
+22 error There is likely additional logging output above.
+23 verbose exit [ 1, true ]
