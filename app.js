@@ -4,7 +4,7 @@ var Ping = require('./lib/ping'),
   port = process.env.PORT || 3008,
   urls = [],
   monitors = [],
-  require('heroku-self-ping')("https://ancient-beach-4628.herokuapp.com");
+  upkeep = require('heroku-self-ping')("https://ancient-beach-4628.herokuapp.com");
 
 var monitor = new Ping({
   website: 'http://ckpk.streamon.fm/metadata/events/CKPK-48k.json',
